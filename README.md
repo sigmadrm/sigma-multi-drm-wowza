@@ -12,17 +12,17 @@ Tài liệu này sẽ hướng dẫn tích hợp hệ thống Sigma Multi DRM v�
 
 - **Bước 1:** Tạo một ứng dụng trong wowza. 
 
-  ![wowza_createapp](.\assets\wowza_createapp.png)
+  ![wowza_createapp](https://dashboard.sigmadrm.com/assets/wowza_createapp.png)
+  
 
 - **Bước 2:** Chỉ cho phép các kiểu playback: MPEG-DASH, Apple HLS, Microsoft Smooth Streaming.
 
   - Chọn Application.
   - Chọn ứng dụng cần edit.
   - Chọn Edit
-
   
-
-  ![wowza_enable_playback](.\assets\wowza_enable_playback.png)
+  ![wowza_enable_playback](https://dashboard.sigmadrm.com/assets/wowza_enable_playback.png)
+  
 
 - **Bước 3:** Copy file .jar vào trong thư mục lib của wowza "[WOWZA_INSTALL_DIR]/lib".
 
@@ -30,21 +30,22 @@ Tài liệu này sẽ hướng dẫn tích hợp hệ thống Sigma Multi DRM v�
 
   - **Bước 4.1:** Cấu hình library cho ứng dụng: Application -> Modules -> Edit:
 
-    ![wowza_config_lib](..\assets\wowza_config_lib.png)
+    ![wowza_config_lib](https://dashboard.sigmadrm.com/assets/wowza_config_lib.png)
 
   - **Bước 4.2:** Cấu hình properties: Properties ->HTTP Streamers Cupertino Settings
 
-    ![wowza_config_lib](..\assets\wowza_hls_version.png)
+    ![wowza_config_lib](https://dashboard.sigmadrm.com/assets/wowza_hls_version.png)
 
   - **Bước 4.2:** Cấu hình properties: Properties -> Edit -> Custom
   
-    ![wowza_config_lib](..\assets\wowza_config_custom_property.png)
+    ![wowza_config_lib](https://dashboard.sigmadrm.com/assets/wowza_config_custom_property.png)
+  
   
     | Tên thuộc tính                  | Đường dẫn        | Kiểu   | Mô tả                                                 |
     | ------------------------------- | ---------------- | ------ | ----------------------------------------------------- |
     | **sm_merchant**                 | Root/Application | String | Merchant id của khách hàng                            |
     | sm_app_id                       | Root/Application | String | App id của khách hàng                                 |
-  | sm_username                     | Root/Application | String | Tài khoản đăng nhập vào hệ thống của khách hàng       |
+    | sm_username                     | Root/Application | String | Tài khoản đăng nhập vào hệ thống của khách hàng       |
     | sm_password                     | Root/Application | String | Mật khẩu đăng nhập của tài khoản                      |
     | sm_env                          | Root/Application | Int    | Môi trường phát triển: Dùng thử: 1, Dùng thật: 2      |
     | **cupertinoEncryptionAPIBased** | Root/Application | Bool   | Cho phép mã hóa fairplay. Cái đặt giá trị này là true |
