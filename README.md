@@ -80,4 +80,4 @@ Nếu tên stream là **bigbuckbunny_200000.mp4** thì tên của nội dung s�
 
 **Ví dụ:**
 
-Tên nội dung của bạn là **cdntest_vtv1-0.stream**, thì trường **sm_asset_pattern** có giá trị là **(.\*)-(.\*).stream**. Khi đó thì tên nội dung của bạn sẽ là **cdntest_vtv1**.
+Tên nội dung của bạn là **cdntest_vtv1-0.stream**, thì trường **sm_asset_pattern** có giá trị là **(.\*)-(.\*)**. Khi đó thì tên nội dung của bạn sẽ là **cdntest_vtv1**.
