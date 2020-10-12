@@ -75,7 +75,7 @@ Nếu tên stream là **bigbuckbunny_200000.mp4** thì tên của nội dung s�
 
 Để sử dụng phần này, bạn sẽ cần một chút hiểu biết về Regular Expression. Chúng tôi đề xuất bạn nên sử dụng cách 4.1 để tạo ra profile một cách dễ dàng hơn.
 
-- Cài đặt trường **sm_asset_pattern_default** là fail.
+- Cài đặt trường **sm_asset_pattern_default** là false.
 - Cài đặt trường **sm_asset_pattern** là một biểu thức chính quy để bỏ qua phần thông số của profile.
 
 **Ví dụ:**
